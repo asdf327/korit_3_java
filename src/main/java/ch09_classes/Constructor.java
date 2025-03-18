@@ -17,6 +17,7 @@ public class Constructor {
     //필드 선언
     int num;
     String  name;
+    String title;
 
     //기본 생성자 정의 -> 직접하면 메서드 [입력값 x |출력값 x]
     Constructor(){
@@ -29,5 +30,27 @@ public class Constructor {
     Constructor(int number){
         System.out.println("매개변수를 필수로 요구하는 생성자");
         this.num = number; //this : 해당 클래스에서 객체를 만들게 되면 객체 이름으로 대체
+    }
+
+    //두 개 이상의 매개변수를 지니는 생성자
+    Constructor(int num, String name){
+        this.num = num;
+        this.name = name;
+        System.out.println("매개변수 전체를 요구하는 생성자");
+    }
+
+    Constructor(String name, int num){
+//        this.title = title;
+        this.name = name;
+        this.num= num;
+        System.out.println("매개변수를 필수로 요구하는 생성자");
+    }
+
+
+
+    //메서드를 정의
+    void sh(){
+        System.out.println("이 객체의 num 값은 : " + num);
+        System.out.println("이 객체의 name 값은 :  " + name);
     }
 }
