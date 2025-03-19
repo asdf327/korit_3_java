@@ -36,7 +36,7 @@ public class UnivStudent {
             System.out.println("범위를 벗어남");
         }
         this.scotr = scotr;
-        System.out.println(scotr);
+//        System.out.println(scotr);
     }
 
     public void setGrade(int grade){
@@ -44,7 +44,7 @@ public class UnivStudent {
             System.out.println("범위를 벗어남");
         }
         this.grade = grade;
-        System.out.println(grade);
+//        System.out.println(grade);
     }
 
     public void setName(String name){
@@ -60,7 +60,11 @@ public class UnivStudent {
         return grade;
     }
 
-    void UnivStudent1(){
+    public String getName(){
+        return name;
+    }
+
+    void showInfo(){
         System.out.println("이름 : " + this.name + "\n학년 : " + grade + "\n점수 : " + this.scotr + "\n");
     }
 }

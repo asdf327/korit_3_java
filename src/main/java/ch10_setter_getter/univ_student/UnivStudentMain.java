@@ -7,8 +7,6 @@ public class UnivStudentMain {
         UnivStudent student3 = new UnivStudent();
         UnivStudent student4 = new UnivStudent();
         UnivStudent student5 = new UnivStudent();
-//        System.out.println(student2.getScotr());
-//        System.out.println(student3.getGrade());
 
         student1.setName("김일");
         student1.setGrade(1);
@@ -32,10 +30,10 @@ public class UnivStudentMain {
         student5.setGrade(2);
         student5.setScotr(2.0);
 
-        student1.UnivStudent1();
-        student2.UnivStudent1();
-        student3.UnivStudent1();
-        student4.UnivStudent1();
-        student5.UnivStudent1();
+        student1.showInfo();
+        student2.showInfo();
+        student3.showInfo();
+        student4.showInfo();
+        student5.showInfo();
     }
 }

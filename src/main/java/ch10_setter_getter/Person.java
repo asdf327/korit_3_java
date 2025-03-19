@@ -50,14 +50,14 @@ public class Person {
     //필드와 동일한 자료형의 return
     public void getName(String name){
         //이름의 글자 수가 4초과라면 입력이 불가능 하게씀
-        if (name.length() > 5){
+        if (name.length() > 4){
             System.out.println("4글자 초과");
             return;
         }
         System.out.println("이름");
         System.out.println("변경 전 이름 " + this.name);
         this.name = name;
-        System.out.println("변경 후 이름 " + this.name);
+        System.out.println("변경 후 이름 " + name);
     }
 
     public String getName() {
