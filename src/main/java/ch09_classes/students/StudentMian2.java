@@ -1,5 +1,7 @@
 package ch09_classes.students;
 
+import java.util.Scanner;
+
 public class StudentMian2 {
     public static void main(String[] args) {
         Student2 student1 = new Student2();
@@ -13,19 +15,19 @@ public class StudentMian2 {
         student1.studentCode = 2025001;
         student1.name = "김일";
         student1.score = 4.5;
-        student1.StudentMat1();
 
         student2.name = "김이";
         student2.score = 100;
-        student2.StudentMat1();
 
         student3.studentCode = 2025003;
         student3.score = 95.8;
-        student3.StudentMat1();
 
         student4.score = 4.0;
-        student4.StudentMat1();
 
+        student2.StudentMat1();
+        student3.StudentMat1();
+        student4.StudentMat1();
         student5.StudentMat1();
+
     }
 }
