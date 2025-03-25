@@ -61,5 +61,11 @@ public class Array01 {
             System.out.print(strArr1[i] + "/ ");
         }
 
+        int[] arr3 = new int[10]; //비어있는 배열 선언
+        arr3[0] = 0; //초기화
+        arr3[1] = 0;  //만약 반복되는 규칙을 가지고 있다면 반복문 사용 가능
+
+        System.out.println(arr3[0]);
+
     }
 }
