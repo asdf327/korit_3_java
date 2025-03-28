@@ -7,7 +7,8 @@ public class TVRemoteControl {
     private ChannelUpButton channelUpButton;
     private ChannelDownButton channelDownButton;
 
-    public TVRemoteControl(PowerButton powerButton, VolumeUpButton volumeUpButton,
+    public TVRemoteControl(PowerButton powerButton,
+                           VolumeUpButton volumeUpButton,
                            VolumeDownButton volumeDownButton,
                            ChannelUpButton channelUpButton,
                            ChannelDownButton channelDownButton)

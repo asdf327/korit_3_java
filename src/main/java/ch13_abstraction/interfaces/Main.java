@@ -7,7 +7,9 @@ public class Main {
 //        CherelButton cherelButton = new CherelButton();
 
         TVRemotr tvRemotr = new TVRemotr(new PowerButton(), new ChannelDownButton(),
-                new CherelButton(), new VolumeUpButton(), new VolumeDownButton());
+                new CherelButton(), new VolumeUpButton(), new VolumeDownButton()
+//                , new TempUpButton()
+        );
 
         tvRemotr.onPressedB();
         tvRemotr.oup();
@@ -25,6 +27,8 @@ public class Main {
 
         tvRemotr.onPressedVolumeDownButton();
         tvRemotr.onDownVolumeDownButton();
+
+//        tvRemotr.onTempUpButton();
 
     }
 }

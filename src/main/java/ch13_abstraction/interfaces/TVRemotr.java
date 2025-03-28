@@ -3,13 +3,16 @@ package ch13_abstraction.interfaces;
 public class TVRemotr {
     private PowerButton powerButton;
     private ChannelDownButton channelDownButton;
-    private  CherelButton cherelButton;
+    private CherelButton cherelButton;
     private VolumeUpButton volumeUpButton;
     private VolumeDownButton volumeDownButton;
+//    private TempUpButton tempUpButton;
 
     public TVRemotr(PowerButton powerButton, ChannelDownButton channelDownButton,
                     CherelButton cherelButton, VolumeUpButton volumeUpButton,
-                    VolumeDownButton volumeDownButton)
+                    VolumeDownButton volumeDownButton
+//            , TempUpButton tempUpButton
+    )
     {
         this.powerButton = powerButton;
         this.channelDownButton = channelDownButton;
@@ -55,6 +58,11 @@ public class TVRemotr {
     public void onDownVolumeDownButton(){
         volumeDownButton.OnDuwn();
     }
+
+//    public void onTempUpButton(){
+//        System.out.println(tempUpButton.onUp());
+//        tempUpButton.onPressed();
+//    }
 
 
 }
